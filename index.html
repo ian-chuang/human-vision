@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+    <!-- Replace the content tag with appropriate information -->
+    <meta name="description" content="CS280 Final Project">
+    <meta property="og:title" content="Human Vision for Bimanual Manipulation" />
+    <meta property="og:description" content="CS 280 Final Project" />
+    <meta property="og:url" content="https://ian-chuang.github.io/human-vision/" />
+    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+    <!-- <meta property="og:image" content="static/image/your_banner_image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" /> -->
+
+
+    <meta name="twitter:title" content="Human Vision for Bimanual Manipulation">
+    <meta name="twitter:description" content="CS280 Final Project">
+    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+    <!-- <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+    <meta name="twitter:card" content="summary_large_image"> -->
+    <!-- Keywords for your paper to be indexed by-->
+    <meta name="keywords" content="Bimanual Manipulation, Human Vision, CS280">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title>“Human” Vision for Bimanual Manipulation</title>
+    <!-- <link rel="icon" type="image/x-icon" href="static/images/favicon.ico"> -->
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+    <link rel="stylesheet" href="static/css/bulma.min.css">
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="static/css/index.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+    <script defer src="static/js/fontawesome.all.min.js"></script>
+    <script src="static/js/bulma-carousel.min.js"></script>
+    <script src="static/js/bulma-slider.min.js"></script>
+    <script src="static/js/index.js"></script>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container is-fullhd">
+                <div class="columns is-centered">
+                    <div class="column has-text-centered">
+                        <h1 class="title is-1 publication-title">“Human” Vision for Bimanual Manipulation</h1>
+                        <div class="is-size-5 publication-authors">
+                            <span class="author-block">
+                                <a target="_blank" href="https://ian-chuang.github.io/">Ian Chuang</a>
+                            </span>
+                        </div>
+
+                        <!-- <div class="is-size-5 publication-authors">
+                            <span class="author-block"><sup>1</sup>University of California, Berkeley </span>
+                            <span class="author-block"><sup>2</sup>University of California, Davis</span>
+                            <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                        </div> -->
+
+                        <div class="column has-text-centered">
+                            <div class="publication-links">
+
+                                <!-- Arxiv PDF link -->
+                                <span class="link-block">
+                                    <a href="static/Human_Vision_for_Bimanual_Manipulation.pdf" target="_blank"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fas fa-file-pdf"></i>
+                                        </span>
+                                        <span>Paper</span>
+                                    </a>
+                                </span>
+
+                                <!-- Github link -->
+                                <span class="link-block">
+                                    <a href="https://github.com/ian-chuang/human-vision" target="_blank"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fab fa-github"></i>
+                                        </span>
+                                        <span>Code</span>
+                                    </a>
+                                </span>
+
+                                <!-- ArXiv abstract Link -->
+                                <!-- <span class="link-block">
+                                    <a href="https://arxiv.org/abs/2409.17435" target="_blank"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="ai ai-arxiv"></i>
+                                        </span>
+                                        <span>arXiv</span>
+                                    </a>
+                                </span> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Abstract -->
+    <section class="section hero is-light">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Abstract</h2>
+                    <div class="content has-text-justified">
+                        <p>
+                            With recent advances in imitation learning, there is a growing interest in teaching robots
+                            complex behaviors directly from visual input. Recent works in this area mostly focus on
+                            improving action generation and heavily rely on input from raw camera images, which differ
+                            substantially from how humans use vision—particularly the role of gaze in directing
+                            attention and fixation. Given the superior dexterity of humans, it is reasonable to consider
+                            how robotic vision systems might benefit from mimicking human visual processing. We
+                            introduce a robot simulation platform for simultaneously collecting eye-tracking data and
+                            robot demonstrations from a human operator. We also present simple architectural
+                            modifications to a standard imitation learning pipeline to integrate gaze information,
+                            specifically by cropping images around the gaze point and incorporating a long history of
+                            gaze observations. These modifications improve overall task performance, enhance robustness
+                            to unseen distractors, and significantly reduce computational overhead.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section hero">
+        <div class="container is-max-widescreen">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-full-width">
+                    <h2 class="title is-3">Human Demonstration with Eye-tracking</h2>
+
+                    <video poster="" autoplay controls muted loop width="50%">
+                        <!-- Your video file here -->
+                        <source src="static/videos/human_demonstration.mov" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section hero is-light">
+        <div class="container is-max-widescreen">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-full-width">
+                    <h2 class="title is-3">Predicted Gaze Heatmap</h2>
+
+                    <video poster="" autoplay controls muted loop width="100%">
+                        <!-- Your video file here -->
+                        <source src="static/videos/gaze_heatmap.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section hero">
+        <div class="container is-max-widescreen">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-full-width">
+                    <h2 class="title is-3">Cropping at Gaze + Observation History</h2>
+
+                    <video poster="" autoplay controls muted loop width="100%">
+                        <!-- Your video file here -->
+                        <source src="static/videos/observation_history.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section hero">
+        <div class="container is-max-widescreen">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-full-width">
+                    <h2 class="title is-3">Out of Distribution Evaluations</h2>
+
+                    <video poster="" autoplay controls muted loop width="100%">
+                        <!-- Your video file here -->
+                        <source src="static/videos/multiple_distractor.mp4" type="video/mp4">
+                    </video>
+
+                    <video poster="" autoplay controls muted loop width="100%">
+                        <!-- Your video file here -->
+                        <source src="static/videos/adverse_distractor.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--BibTex citation -->
+    <!-- <section class="section" id="BibTeX">
+        <div class="container is-max-desktop content">
+            <h2 class="title">BibTeX</h2>
+            <pre><code>@misc{chuang2024activevisionneedexploring,
+    title={Active Vision Might Be All You Need: Exploring Active Vision in Bimanual Robotic Manipulation}, 
+    author={Ian Chuang and Andrew Lee and Dechen Gao and Iman Soltani},
+    year={2024},
+    eprint={2409.17435},
+    archivePrefix={arXiv},
+    primaryClass={cs.RO},
+    url={https://arxiv.org/abs/2409.17435}, 
+}</code></pre>
+        </div>
+    </section> -->
+    <!--End BibTex citation -->
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-8">
+                    <div class="content">
+
+                        <p>
+                            This page was built using the <a
+                                href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+                                target="_blank">Academic Project Page Template</a> which was adopted from the <a
+                                href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+                            You are free to borrow the source code of this website, we just ask that you link back to
+                            this page in the footer. <br> This website is licensed under a <a rel="license"
+                                href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+                                Commons Attribution-ShareAlike 4.0 International License</a>.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>
